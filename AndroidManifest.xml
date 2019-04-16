@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="biz.bokhorst.xprivacy.installer"
-    android:versionCode="12"
-    android:versionName="1.2" >
+    android:versionCode="28"
+    android:versionName="1.18" >
 
     <uses-sdk
+        android:maxSdkVersion="19"
         android:minSdkVersion="15"
         android:targetSdkVersion="19" />
 
-    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
     <application
         android:allowBackup="true"
@@ -23,6 +30,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
